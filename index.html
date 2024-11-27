@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Responsive Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#jokes">Jokes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section id="home" class="hero">
+    <h1>Step into the Hills</h1>
+    <p>Step into the Hills, Where Nature and Adventure Await</p>
+  </section>
+
+  <!-- About Hill Sation Section -->
+  <section id="about">
+    <h2>About Hill Station</h2>
+    <p>Hill stations are scenic retreats located in the mountains, known for their tranquil landscapes, refreshing cool climates, and breathtaking views. These destinations provide a perfect escape from city life, offering activities like trekking, nature walks, and sightseeing. They are ideal for relaxation, adventure, and immersing oneself in natural beauty.
+    </p>
+    <div class="places">
+      <div class="place">
+        <img src="https://travelyojana.in/wp-content/uploads/2024/10/Hill-Station-Near-Shimla-1-1024x768.png" alt="Shimla (Himachal Pradesh)">
+        <p><strong>Simla</strong>: Queen of Hill Stations.</p>
+      </div>
+      <div class="place">
+        <img src="https://www.thekodaichronicle.com/wp-content/uploads/2024/02/Cover.jpg" alt="Ooty (Tamil Nadu)">
+        <p><strong>Ooty</strong>: Nilgiri Hills.</p>
+      </div>
+      <div class="place">
+        <img src="https://th-i.thgim.com/public/incoming/1c5kg7/article67501453.ece/alternates/LANDSCAPE_1200/VANJANGI-2.jpg" alt="Vanjangi">
+        <p><strong>vanjangi</strong>: Hidden Gem of Eastern Ghats.</p>
+      </div>
+      <div class="place">
+        <img src="https://s3.india.com/wp-content/uploads/2024/06/Feature-Image-_-Wayanad.jpg##image/jpg" alt="Wayanad">
+        <p><strong>Wayanad (Kerala)</strong>: Spice Garden of Kerala.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Carousel Section -->
+  <section id="carousel">
+    <h2>Explore Hill Station through Images</h2>
+    <div class="carousel">
+      <button onclick="previousImage()" class="carousel-btn">Previous</button>
+      <img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2024/04/kodaikanal.jpg" alt="Image 1" id="carousel-img">
+      <button onclick="nextImage()" class="carousel-btn">Next</button>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz">
+    <h2>Test Your Knowledge on HillStation</h2>
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <label for="question1">Which hill station is known as the "Queen of the Hills"?</label><br>
+      <input type="radio" name="question1" value="Ooty"> Ooty<br>
+      <input type="radio" name="question1" value="Darjeeling"> Darjeeling<br>
+      <input type="radio" name="question1" value="Shimla"> Amaravathi<br>
+      <!-- Question 2 -->
+      <label for="question2">In which state is the famous hill station, Munnar, located?</label><br>
+      <input type="radio" name="question2" value="Kerala"> Kerala<br>
+      <input type="radio" name="question2" value="TamilNadu"> TamilNadu<br>
+      <input type="radio" name="question2" value="Himachal Pradesh"> Himachal Pradesh<br>
+      <!-- Question 3 -->
+      <label for="question3">What is the altitude of the hill station of Ooty, in meters</label><br>
+      <input type="radio" name="question3" value="1,200 meters"> 1,200 meters<br>
+      <input type="radio" name="question3" value="2,240 meters"> 2,240 meters<br>
+      <input type="radio" name="question3" value="2,900 meters"> 2,900 meters <br>
+      <br>
+      <button type="submit">Submit Quiz</button>
+      </form>
+    <p id="quiz-result"></p>
+  </section>
+
+  <!-- Jokes Section -->
+  <section id="jokes">
+    <h2>Get a Joke</h2>
+    <p id="joke">Loading joke...</p>
+    <button onclick="fetchJoke()">Get Another Joke</button>
+  </section>
+
+</body>
+</html>
